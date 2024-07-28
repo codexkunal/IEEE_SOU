@@ -1,0 +1,74 @@
+.Achivcard {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 70rem;
+}
+
+.Achivimage {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Achivcontent {
+  margin-left: 3.5rem;
+}
+
+.Achivtitle {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.Achivdescription {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+}
+
+@media (max-width: 1200px) {
+  .Achivcard {
+    width: 50rem;
+  }
+  .Achivimage {
+    width: 300px;
+    height: 200px;
+  }
+  .Achivdescription {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .Achivcard {
+    align-items: center;
+    flex-direction: column;
+    width: 25rem;
+  }
+  .Achivimage {
+    margin-bottom: 2rem;
+  }
+  .Achivdescription {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .Achivtitle{
+    font-size: 1rem;
+  }
+  .Achivcontent{
+    margin-left: 0rem;
+  }
+}
+@media (max-width: 460px){
+  .Achivcard{
+    width: 16rem;
+  }
+  .Achivimage{
+    width: 15.5rem;
+  }
+}

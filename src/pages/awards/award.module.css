@@ -1,0 +1,76 @@
+.award {
+  padding-top: 7rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+.togglebuttons {
+  margin-top: 1.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  
+}
+.togglebuttons p {
+  color:rgba(0, 0, 0, .54);
+  padding-top: 5rem;
+  margin-right: 2rem;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.togglebuttons p:hover{
+    background: rgba(219, 216, 216, 0.4);
+
+}
+.togglebuttons .pactive{
+    text-decoration: underline;
+    text-decoration-color: #1976d2;
+    color: #1976d2;
+    
+}
+.togglebuttons .pactive:hover{
+    background:rgba(202, 229, 255, 0.4);
+}
+.branchcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.studentcontainer {
+  display: none;
+  position: relative;
+  right: -100%;
+}
+.deactivebranch {
+  display: none;
+  position: relative;
+  left: -100%;
+}
+.activestudent {
+  /* background-color: #a75151; */
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  transition: transform 5s ease;
+  right: 0;
+}
+@media (max-width: 860px){
+  .togglebuttons{
+    text-align: center;
+  }
+  .togglebuttons p{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,395 @@
+.home {
+  padding-top: 6rem;
+  overflow: hidden;
+}
+.mobimage {
+  display: none;
+}
+.page1 {
+  padding-top: 10px;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3366ff;
+}
+
+.welcomeHeading1 {
+  color: white;
+  font-size: 90px;
+  font-weight: 900;
+  position: relative;
+}
+.welcomeHeading1::before {
+  content: "Welcome to";
+  position: absolute;
+  color: #333232;
+  top: -5px;
+  left: -5px;
+  -webkit-text-stroke: 2px #bbff00;
+  z-index: -1;
+}
+.welcomeHeading2 {
+  color: white;
+  font-size: 90px;
+  font-weight: 900;
+  position: relative;
+}
+.welcomeHeading2::before {
+  content: "Silver Oak University";
+  position: absolute;
+  color: #333232;
+  top: -5px;
+  left: -5px;
+  -webkit-text-stroke: 2px #bbff00;
+  z-index: -1;
+}
+.welcomeHeading3 {
+  color: white;
+  font-size: 90px;
+  font-weight: 900;
+  position: relative;
+}
+.welcomeHeading3::before {
+  content: "IEEE Student Branch";
+  position: absolute;
+  color: #333232;
+  top: -5px;
+  left: -5px;
+  -webkit-text-stroke: 2px #bbff00;
+  z-index: -1;
+}
+.slider {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.sliderimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ieeesection {
+  max-width: 99rem;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #ac2525; */
+}
+
+.ieeesection h2 {
+  margin-top: 2rem;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(116, 47, 138);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-direction: row-reverse;
+}
+
+.section .text {
+  flex: 1;
+  padding: 20px;
+}
+
+.section .image {
+  flex: 1;
+  text-align: center;
+}
+.section .lapimage {
+  flex: 1;
+  text-align: center;
+}
+
+.section .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.factsContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.factsContainer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.facts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fact {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  max-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fact h3 {
+  color: #33475b;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.fact p {
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.membersIcon {
+  color: #8e44ad;
+}
+
+.eventsIcon {
+  color: #e74c3c;
+}
+
+.awardsIcon {
+  color: #3498db;
+}
+
+.participationIcon {
+  color: #2ecc71;
+}
+/* MessageCard.module.css */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border-radius: 44% 56% 70% 30% / 30% 30% 70% 70%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+.suspenseslider {
+  width: 46rem;
+  height: 28rem;
+  margin-bottom: 5rem;
+  animation: skelloading 1s linear infinite alternate;
+  border-radius: 10px;
+}
+
+@keyframes skelloading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+@media (max-width: 1151px) {
+  .home {
+    padding-top: 5rem;
+  }
+  .welcomeHeading3,
+  .welcomeHeading2,
+  .welcomeHeading1 {
+    font-size: 70px;
+  }
+  .welcomeHeading1::before,
+  .welcomeHeading2::before,
+  .welcomeHeading3::before {
+    left: -3px;
+    top: -3px;
+  }
+}
+
+@media (max-width: 1151px) {
+  .suspenseslider {
+    width: 35rem;
+    height: 20rem;
+  }
+  .card {
+    max-width: 50rem;
+  }
+  .section .image {
+    width: 200px;
+    height: 200px;
+  }
+  .section .lapimage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
+    max-width: 45rem;
+  }
+  .image {
+    width: 225px;
+    height: 225px;
+  }
+}
+@media (max-width: 782px) {
+  .card {
+    max-width: 38rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .welcomeHeading3,
+  .welcomeHeading2,
+  .welcomeHeading1 {
+    font-size: 50px;
+  }
+  .welcomeHeading1::before,
+  .welcomeHeading2::before,
+  .welcomeHeading3::before {
+    left: -2px;
+    top: -2px;
+  }
+}
+@media (max-width: 730px) {
+  .ieeesection h2 {
+    font-size: 30px;
+  }
+  .section .text h3 {
+    font-size: 20px;
+  }
+  .section .mobimage {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+  }
+  .section .mobimage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .lapimage {
+    display: none;
+  }
+  .section .image {
+    width: 150px;
+    height: 150px;
+  }
+  .section {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 590px) {
+  .suspenseslider {
+    width: 30rem;
+    height: 20rem;
+  }
+  .page1 {
+    width: auto;
+  }
+  .welcomeHeading3,
+  .welcomeHeading2,
+  .welcomeHeading1 {
+    font-size: 30px;
+  }
+  .welcomeHeading1::before,
+  .welcomeHeading2::before,
+  .welcomeHeading3::before {
+    left: -1px;
+    top: -1px;
+  }
+  .card {
+    max-width: 27rem;
+  }
+  .title {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 590px) {
+  .suspenseslider{
+    width: 25rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 420px) {
+  .suspenseslider{
+    width: 20rem;
+    height: 10rem;
+  }
+}
+@media (max-width: 321px) {
+  .welcomeHeading3,
+  .welcomeHeading2,
+  .welcomeHeading1 {
+    font-size: 25px;
+  }
+  .welcomeHeading1::before,
+  .welcomeHeading2::before,
+  .welcomeHeading3::before {
+    left: -0.25px;
+    top: -0.25px;
+  }
+  .suspenseslider{
+    width: 18rem;
+    height: 9rem;
+  }
+}

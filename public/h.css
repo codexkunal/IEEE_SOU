@@ -1,0 +1,126 @@
+/* h.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar, .scrolled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2d46f4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrolled {
+    background-color: #1a2bb8;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcd3c;
+  }
+  
+  .right-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .right-section .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .right-section .button, .right-section .button2 {
+    background-color: white;
+    color: #2d46f4;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .right-section .button2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .right-section .button:hover {
+    background-color: #ffcd3c;
+    color: white;
+  }
+  
+  .right-section .button2:hover {
+    background-color: white;
+    color: #2d46f4;
+  }
+  
+  .hideit {
+    display: none;
+  }
+  
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #2d46f4;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  
+  .hello {
+    padding: 2rem;
+    margin-top: 70px; /* Adjust according to the navbar height */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .logo .icon2 {
+      display: inline;
+    }
+  
+    .right-section {
+      display: none;
+    }
+  
+    .mobile {
+      display: none;
+    }
+  }
+  

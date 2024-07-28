@@ -1,0 +1,11 @@
+User-agent: *
+allow: /
+allow: /members
+allow: /awards
+allow: /contactus
+allow: /events
+allow: /faqs
+allow: /ieee
+allow: /sou-ieee-sb
+allow: /sou-ieee-wie-ag
+allow: /sou-ieee-sps-sbc

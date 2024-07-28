@@ -1,0 +1,10 @@
+static:
+  builds:
+    - type: webpack
+      env: 
+        - node
+        - static
+      routes:
+        - type: rewrite
+          source: "/*"
+          destination: "/index.html"
